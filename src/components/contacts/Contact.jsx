@@ -30,8 +30,8 @@ const Contact = () => {
                 <MdEmail className="icon"/>
                 </div>
                 <div className="text">
-                    <p>Email: ICAST@gmail.com</p>
-                    <p>Email: ICAST@gmail.com</p>
+                    <p>Email: icastshools@gmail.com</p>
+                    <p>Email: icastshools@gmail.com</p>
                 </div>  
             </div>
            

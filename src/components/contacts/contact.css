@@ -34,3 +34,9 @@
     transform: scale(1.2);
 
 }
+
+@media screen and (max-width: 1025px){
+    .contact__container{
+        flex-direction: column;
+    }
+}

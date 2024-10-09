@@ -46,9 +46,9 @@ const Footer = () => {
                We're here to help you!</p>
           </div>
           <div className="contact__info">
-            <p><FaAddressBook className='icon' /><span>123 School Lane, Education City, EC 12345</span></p>
+            <p><FaAddressBook className='icon' /><span>Elebu, Ibadan</span></p>
             <p><BsFillTelephoneMinusFill className='icon' /><span>(123) 456-7890</span></p>
-            <p><MdMarkEmailUnread className='icon' /><span>info@icast-school.edu</span></p>
+            <p><MdMarkEmailUnread className='icon' /><span>icastshools@gmail.com</span></p>
           </div>
         </div>
       </div>
