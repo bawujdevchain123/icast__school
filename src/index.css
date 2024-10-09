@@ -2330,7 +2330,7 @@ line-height: 1.8rem
 
 .activities__categories .activities__categories__container{
     display: grid;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 43% 43%;
     gap: 1rem;
     place-content: center;
  
@@ -2354,7 +2354,7 @@ line-height: 1.8rem
 }
 
 .activities__categories__container .card .upper__content .image__container{
-   width: 23rem;
+   width: 21rem;
    display: flex;
    justify-items: center;
 }
