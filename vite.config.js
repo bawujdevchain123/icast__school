@@ -5,7 +5,12 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-  host: true 
+    host: true
   },
-  assetsInclude: ['**/*.jpg', '**/*.JPG',  '**/*.jpeg', '**/*.png', '**/*.gif', '**/*.svg']
+  assetsInclude: ['**/*.jpg', '**/*.JPG', '**/*.jpeg', '**/*.png', '**/*.gif', '**/*.svg'],
+  build: {
+    rollupOptions: {
+      input: '/src/main.jsx',
+    },
+  },
 })
