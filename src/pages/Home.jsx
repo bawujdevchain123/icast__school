@@ -190,8 +190,10 @@ const containerVariant = {
     >
       <div className="hero__container">
         <motion.div className="hero__banner-text" initial={{y:-500}} animate={{y:0}} transition={{delay:1, type :"spring", stiffness: "400"}}>
-          <h1>Welcome <span>ICAST SCHOOLS</span></h1>
-          <p>Inspiring Excellence in Education from Kindergarten to Secondary School.</p>
+        <h1>Welcome to <span>ICAST Schools</span></h1>
+        <p>Empowering Future Leaders through Quality Education from Kindergarten to Secondary School.</p>
+          <p>At ICAST Schools, we nurture young minds with a comprehensive curriculum designed to inspire curiosity and foster a love for learning. Our dedicated educators are committed to providing a supportive environment where every child can thrive, discover their potential, and excel in their academic journey.</p>
+
         </motion.div>
         <button className='prev' onClick={prevSlide}><FaLessThan className='icon' /></button>
         <button className='next' onClick={nextSlide}><FaGreaterThan className='icon'/></button>

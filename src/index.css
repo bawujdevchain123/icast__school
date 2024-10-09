@@ -488,32 +488,33 @@ h5{
 }
 
 .hero__banner-text{
+    width: 40%;
     position: absolute;
     text-align: center;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(211, 211, 211, 0.4);
     padding: 0.5rem 1.5rem;
     border-radius: var(--border-radius-1);
+    left: 2rem;
+    top: 17rem;
+    color: black
 }
 
 .hero__banner-text h1{
     font-size: 4rem;
     font-family: bold;
-    color:var(--color-white);
+    color: var(--color-primary);
 }     
 
 .hero__banner-text h1 span{
    
     font-size: 2.5rem;
-    background-clip: text;
-    background-image: url('../src/assets/images/gallery1.jpg');
-    background-size: cover;
-    -webkit-background-clip: text;
-    color: transparent;
+    color: var(--secondary-color);
+   
     
 }
 
 .hero__banner-text p{
-    color: var(--color-gray-900);
+    color: #000000;
 }
 
 .hero__container button{
@@ -1269,7 +1270,7 @@ line-height: 1.8rem
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    padding-top: 3rem;
+   
 }
 .footer__container .contact__info{
    display: flex;
