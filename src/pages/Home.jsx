@@ -92,9 +92,9 @@ const Home = () => {
     if(inView){
     const counters = [
       {endValue: 100, setCount:setTeacher},
-      {endValue: 100, setCount:setStudent},
-      {endValue: 100, setCount:setLocation},
-      {endValue: 100, setCount:setAward}
+      {endValue: 1000, setCount:setStudent},
+      {endValue: 2, setCount:setLocation},
+      {endValue: 20, setCount:setAward}
     ]
 
       counters.forEach(({endValue, setCount})=> {
@@ -119,7 +119,7 @@ const Home = () => {
   if (isAnimating) {
     const timer = setTimeout(() => {
       setIsAnimating(false);
-    }, 500); // Match this to the duration of your exit transition
+    }, 500); 
     return () => clearTimeout(timer);
   }
 }, [isAnimating]);
@@ -208,8 +208,7 @@ const containerVariant = {
             <div className="about__icon"><FaFlag className='icon'/></div>
             <div className="about__text">
               <h2>Mission</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Sit quaerat a, ipsa voluptates atque voluptatem!</p>
+              <p>To empower individuals through education, fostering a community of lifelong learners who are equipped to face the challenges of tomorrow.</p>
             </div>
           </motion.div>
           <motion.div className="about__box vision"
@@ -218,8 +217,7 @@ const containerVariant = {
             <div className="about__icon"><FaLowVision className='icon' /></div>
               <div className="about__text">
                 <h2>Vision</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Sit quaerat a, ipsa voluptates atque voluptatem!</p>
+                <p>To create a world where every individual has access to quality education and the opportunity to achieve their fullest potential.</p>
               </div>
           </motion.div>
           <motion.div className="about__box history"
@@ -228,8 +226,7 @@ const containerVariant = {
             <div className="about__icon"><FaHistory className='icon' /></div>
               <div className="about__text">
                 <h2>History</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Sit quaerat a, ipsa voluptates atque voluptatem!</p>
+                <p>Founded in 2012, our institution has a rich heritage of nurturing young minds and fostering academic excellence through innovative teaching methods.</p>
               </div>
           </motion.div>
           <motion.div className="about__box program"
@@ -238,8 +235,7 @@ const containerVariant = {
             <div className="about__icon"><HiAcademicCap className='icon'/></div>
               <div className="about__text">
                 <h2>Academics</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Sit quaerat a, ipsa voluptates atque voluptatem!</p>
+                <p>We offer a comprehensive curriculum that emphasizes critical thinking, creativity, and a commitment to lifelong learning, preparing students for success in a rapidly changing world.</p>
               </div>
           </motion.div>
         </motion.div>
@@ -268,7 +264,7 @@ const containerVariant = {
       >
         <div className="video__container">
             <video width="500" height="300" controls autoPlay  className='welcome__video'>
-                <source src="/video/welcome.mp4" type="video/mp4" />
+                <source src="https://icast01.s3.eu-north-1.amazonaws.com/welcome.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
         </div>

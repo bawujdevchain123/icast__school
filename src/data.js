@@ -125,97 +125,80 @@ export const teamImage =[
 ]
 
 export const schoolActivities = [
-    {
-        id: 1,
-        title: 'Sport',
-        image: sport,
-        description: `orem ipsum dolor sit, amet consectetur adipisicing elit 
-                  Enim, atque ducimus. Porro repellat eum architecto Lorem ipsum dolor, sit amet 
-                  consectetur adipisicing elit. Inventore nemo optio asperiores vitae quos
-               corporis?velit reprehenderit qui voluptatem nihil!orem ipsum dolor sit, amet consectetur adipisicing elit 
-                  Enim, atque ducimus. Porro repellat eum architecto Lorem ipsum dolor, sit amet 
-                  consectetur adipisicing elit. Inventore nemo optio asperiores vitae quos
-                 `
-    },
+  {
+      id: 1,
+      title: 'Sports',
+      image: sport,
+      description: `Our sports program encourages physical fitness and teamwork. 
+                    Students participate in various sports such as soccer, basketball, and track, 
+                    promoting a healthy lifestyle and fostering school spirit through friendly competition.`
+  },
+  {
+      id: 2,
+      title: 'Music',
+      image: music,
+      description: `Music education is a vital part of our curriculum, offering students the opportunity 
+                    to explore instruments, vocal techniques, and music theory. 
+                    From kindergarten through secondary school, we cultivate creativity and teamwork through performances and ensemble activities.`
+  },
+  {
+      id: 3,
+      title: 'Debate',
+      image: debate,
+      description: `Our debate club develops critical thinking and public speaking skills. 
+                    Students from secondary school engage in discussions on various topics, 
+                    learning to articulate their thoughts and respect differing viewpoints while preparing for future challenges.`
+  },
+  {
+      id: 4,
+      title: 'Excursions',
+      image: excursion1,
+      description: `We organize regular excursions to enhance learning beyond the classroom. 
+                    These trips, which cater to all age groups, include visits to museums, nature parks, and historical sites, 
+                    providing students with hands-on experiences that enrich their understanding of the world.`
+  }
+];
 
-    {
-        id: 2,
-        title: 'Music',
-        image: music,
-        description:`orem ipsum dolor sit, amet consectetur adipisicing elit 
-                  Enim, atque ducimus. Porro repellat eum architecto Lorem ipsum dolor, sit amet 
-                  consectetur adipisicing elit. Inventore nemo optio asperiores vitae quos
-               corporis?velit reprehenderit qui voluptatem nihil!orem ipsum dolor sit, amet consectetur adipisicing elit 
-                  Enim, atque ducimus. Porro repellat eum architecto Lorem ipsum dolor, sit amet 
-                  consectetur adipisicing elit. Inventore nemo optio asperiores vitae quos
-                  corporem ipsum dolor sit, amet consectetur adipisicing elit 
-                  Enim, atque ducirem ipsum dolor, sit amet 
-                 `
-    },
-    {
-        id: 3,
-        title: 'Debate',
-        image: debate,
-        description: `orem ipsum dolor sit, amet consectetur adipisicing elit 
-                  Enim, atque ducimus. Porro repellat eum architecto Lorem ipsum dolor, sit amet 
-                  consectetur adipisicing elit. Inventore nemo optio asperiores vitae quos
-               corporis?velit reprehenderit qui voluptatem nihil!orem ipsum dolor sit, amet consectetur adipisicing elit 
-                  Enim, atque ducimus. Porro repellat eum architecto Lorem ipsum dolor, sit amet 
-                  consectetur adipisicing elit. Inventore nemo optio asperiores vitae quos
-                  corporem ipsum dolor sit, amet consectetur adipisicing elit 
-               
-                 `
-    },
-    {
-        id: 4,
-        title: 'Excursion',
-        image: excursion1,
-        description: `orem ipsum dolor sit, amet consectetur adipisicing elit 
-                  Enim, atque ducimus. Porro repellat eum architecto Lorem ipsum dolor, sit amet 
-                  consectetur adipisicing elit. Inventore nemo optio asperiores vitae quos
-               corporis?velit reprehenderit qui voluptatem nihil!orem ipsum dolor sit, amet consectetur adipisicing elit 
-                  Enim, atque ducimus. Porro repellat eum architecto Lorem ipsum dolor, sit amet 
-                  consectetur adipisicing elit. Inventore nemo optio asperiores vitae quos
-                  corporem ipsum 
-               `
-    }
-]
 
 export const testimonials = [
-    {id: 1,
-     text :`m dolor sit, amet consectetur adipisicing elit Enim, atque ducimus. Porro repellat eum architecto Lorem ipsum dolor, sit amet 
-    consectetur adipisicing elit. Inventore nemo optio asperiores vitae quos`,
-    image: person1
-    },
-    {id: 2, text :`m dolor sit, amet consectetur adipisicing elit Enim, atque ducimus. Porro repellat eum architecto Lorem ipsum dolor, sit amet 
-    consectetur adipisicing elit. Inventore nemo optio asperiores vitae quos`,
-    image: person2
-    },
-    {id: 3, text :`m dolor sit, amet consectetur adipisicing elit Enim, atque ducimus. Porro repellat eum architecto Lorem ipsum dolor, sit amet 
-    consectetur adipisicing elit. Inventore nemo optio asperiores vitae quos`,
-    image: person3
-    },
-    {id: 4, text :`m dolor sit, amet consectetur adipisicing elit Enim, atque ducimus. Porro repellat eum architecto Lorem ipsum dolor, sit amet 
-    consectetur adipisicing elit. Inventore nemo optio asperiores vitae quos`,
-    image: person4
-    },
-    {id: 5, text :`m dolor sit, amet consectetur adipisicing elit Enim, atque ducimus. Porro repellat eum architecto Lorem ipsum dolor, sit amet 
-    consectetur adipisicing elit. Inventore nemo optio asperiores vitae quos`,
-    image: person3
-    },
-    {id: 6, text :`m dolor sit, amet consectetur adipisicing elit Enim, atque ducimus. Porro repellat eum architecto Lorem ipsum dolor, sit amet 
-    consectetur adipisicing elit. Inventore nemo optio asperiores vitae quos`,
-    image:person1
-    },
-    {id: 7, text :`m dolor sit, amet consectetur adipisicing elit Enim, atque ducimus. Porro repellat eum architecto Lorem ipsum dolor, sit amet 
-    consectetur adipisicing elit. Inventore nemo optio asperiores vitae quos`,
-    image: person2
-    },
-    {id: 8, text :`m dolor sit, amet consectetur adipisicing elit Enim, atque ducimus. Porro repellat eum architecto Lorem ipsum dolor, sit amet 
-    consectetur adipisicing elit. Inventore nemo optio asperiores vitae quos`,
-    image: person3
-    },
-]
+  {
+      id: 1,
+      text: `As a parent, I am thrilled with the progress my child has made in this school. 
+             The supportive teachers and engaging curriculum have truly nurtured their love for learning.`,
+      image: person1
+  },
+  {
+      id: 2,
+      text: `This school provides a nurturing environment where every student feels valued. 
+             I've watched my child thrive academically and socially, and I couldn't be happier.`,
+      image: person2
+  },
+  {
+      id: 3,
+      text: `The teachers are incredibly dedicated and take the time to understand each child's needs. 
+             I feel confident that my child is receiving a quality education.`,
+      image: person3
+  },
+  {
+      id: 4,
+      text: `The communication between teachers and parents is outstanding. 
+             I appreciate the regular updates and the opportunities to be involved in my child's education.`,
+      image: person4
+  },
+  {
+      id: 5,
+      text: `I am grateful for the extracurricular activities offered at this school. 
+             They have helped my child develop new skills and interests beyond the classroom.`,
+      image: person1
+  },
+  {
+      id: 6,
+      text: `The school's commitment to fostering a love for learning is evident. 
+             My child comes home excited about what they've learned each day.`,
+      image: person2
+  },
+];
+
 
 
 
@@ -311,58 +294,57 @@ export const posts = [
   }
 ];
 
-export const kindagartenOffers= [
-    {
-        id: 1,
-        title: 'Mathematics',
-        icon: sport,
-        text: `orem ipsum dolor sit, amet consectetur adipisicing elit Enim, atque ducimus. Porro repellat eum architecto Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore nemo optio asperiores vitae quos`,
-        image: person1,
-        color: 'limegreen'  
-    },
+export const kindagartenOffers = [
+  {
+      id: 1,
+      title: 'Mathematics',
+      icon: sport,
+      text: `At ICAST Kindergarten, we introduce children to the world of numbers through engaging activities that promote counting, pattern recognition, and basic problem-solving skills. Our playful approach makes learning math fun and exciting!`,
+      image: person1,
+      color: 'limegreen'
+  },
+  {
+      id: 2,
+      title: 'Language Arts',
+      icon: music,
+      text: `We foster a love for reading and writing in our little learners. Through storytelling, rhymes, and interactive activities, children enhance their vocabulary and develop early literacy skills.`,
+      image: person3,
+      color: 'pink'
+  },
+  {
+      id: 3,
+      title: 'Creative Writing',
+      icon: debate,
+      text: `Our creative writing sessions encourage children to express themselves through stories and drawings. They learn to put their thoughts on paper while developing their imagination and communication skills.`,
+      image: class1,
+      color: 'rgb(192, 217, 255)'
+  },
+  {
+      id: 4,
+      title: 'Music & Movement',
+      icon: music,
+      text: `Music is an integral part of our curriculum. Children explore rhythms, melodies, and instruments, enhancing their creativity and coordination through song and dance.`,
+      image: hero1,
+      color: 'rgb(255, 192, 255)'
+  },
+  {
+      id: 5,
+      title: 'Physical Education',
+      icon: sport,
+      text: `Our sports program encourages active play and teamwork. Through fun games and activities, children develop their motor skills, learn the importance of fitness, and make new friends.`,
+      image: class3,
+      color: 'rgb(204, 192, 255)'
+  },
+  {
+      id: 6,
+      title: 'Arts & Crafts',
+      icon: excursion,
+      text: `Art is a fantastic way for children to express their creativity. Our arts and crafts sessions provide opportunities for kids to explore different materials and techniques, fostering their artistic skills and imagination.`,
+      image: class2,
+      color: 'rgb(249, 255, 192)'
+  }
+];
 
-    {
-        id: 2,
-        title: 'Language',
-        icon: music,
-        text:`orem ipsum dolor sit, amet consectetur adipisicing elit Enim, atque ducimus. Porro repellat eum architecto Lorem ipsum dolor, sit amet 
-        consectetur adipisicing elit. Inventore nemo optio asperiores vitae quos`,
-        image: person3,
-        color: 'pink'
-    },
-    {
-        id: 3,
-        title: 'writing',
-        icon: debate,
-        text: `orem ipsum dolor sit, amet consectetur adipisicing elit Enim, atque ducimus. Porro repellat eum architecto Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore nemo optio asperiores vitae quo `,
-        image: class1,
-        color: 'rgb(192, 217, 255)'
-    },
-    {
-        id: 4,
-        title: 'Music',
-        icon: music,
-        text: `porem ipsum dolor sit, amet consectetur adipisicing elit Enim, atque ducimus. Porro repellat eum architecto Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore nemo optio asperiores vitae quos`,
-        image:hero1,
-        color:'rgb(255, 192, 255)'
-    },
-    {
-        id: 5,
-        title: 'Sports',
-        icon: sport,
-        text: `orem ipsum dolor sit, amet consectetur adipisicing elit Enim, atque ducimus. Porro repellat eum architecto Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore nemo optio asperiores vitae quos`,
-        image: class3,
-        color: 'rgb(204, 192, 255)'
-      },
-    {
-        id: 6,
-        title:'Arts',
-        icon: excursion,
-        text: `orem ipsum dolor sit, amet consectetur adipisicing elit Enim, atque ducimus. Porro repellat eum architecto Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore nemo optio asperiores vitae quos`,
-        image: class2,
-        color: 'rgb(249, 255, 192)'
-    }
-]
 
 
 export const kindagartenGallery = [
