@@ -8,9 +8,5 @@ export default defineConfig({
     host: true
   },
   assetsInclude: ['**/*.jpg', '**/*.JPG', '**/*.jpeg', '**/*.png', '**/*.gif', '**/*.svg'],
-  build: {
-    rollupOptions: {
-      input: './src/main.jsx',
-    },
-  },
+
 })
