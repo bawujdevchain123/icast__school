@@ -10,7 +10,7 @@ export default defineConfig({
   assetsInclude: ['**/*.jpg', '**/*.JPG', '**/*.jpeg', '**/*.png', '**/*.gif', '**/*.svg'],
   build: {
     rollupOptions: {
-      input: '/src/main.jsx',
+      input: './src/main.jsx',
     },
   },
 })

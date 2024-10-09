@@ -1,7 +1,9 @@
 
 import React, { useState } from 'react';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
-import Contact from '../components/contacts/Contact'
+import Contact from '../components/contacts/Contact';
+import Subheader from '../components/subheader/Subheader';
+import { heroImage } from '../data';
 
 const Contacts = () => {
     const [formData, setFormData] = useState({
@@ -28,11 +30,13 @@ const Contacts = () => {
     };
 
     const center = {
-        lat: 6.5244, // Change this to your organization's latitude
-        lng: 3.3792, // Change this to your organization's longitude
+        lat: 6.5244, 
+        lng: 3.3792, 
     };
 
     return (
+        <>
+        <Subheader name ="contact" image ={heroImage[3]}/>
         <div className='contact-form'>
             <Contact/>
             <form onSubmit={handleSubmit} className="form-container container">
@@ -91,6 +95,7 @@ const Contacts = () => {
                 </GoogleMap>
             </LoadScript>
         </div>
+    </>
     );
 };
 
