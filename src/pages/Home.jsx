@@ -192,7 +192,7 @@ const containerVariant = {
         <motion.div className="hero__banner-text" initial={{y:-500}} animate={{y:0}} transition={{delay:1, type :"spring", stiffness: "400"}}>
         <h1>Welcome to <span>ICAST Schools</span></h1>
         <p>Empowering Future Leaders through Quality Education from Kindergarten to Secondary School.</p>
-          <p>At ICAST Schools, we nurture young minds with a comprehensive curriculum designed to inspire curiosity and foster a love for learning. Our dedicated educators are committed to providing a supportive environment where every child can thrive, discover their potential, and excel in their academic journey.</p>
+          <p>At ICAST Schools, we nurture young minds with a comprehensive curriculum designed to inspire curiosity and foster a love for learning. Our dedicated educators are committed to providing a supportive environment where every child can thrive, discover their potential,and excel in their academic journey.</p>
 
         </motion.div>
         <button className='prev' onClick={prevSlide}><FaLessThan className='icon' /></button>
@@ -237,7 +237,7 @@ const containerVariant = {
             <div className="about__icon"><HiAcademicCap className='icon'/></div>
               <div className="about__text">
                 <h2>Academics</h2>
-                <p>We offer a comprehensive curriculum that emphasizes critical thinking, creativity, and a commitment to lifelong learning, preparing students for success in a rapidly changing world.</p>
+                <p>We provide a curriculum that fosters critical thinking, creativity, and lifelong learning, preparing students for success in a changing world.</p>
               </div>
           </motion.div>
         </motion.div>

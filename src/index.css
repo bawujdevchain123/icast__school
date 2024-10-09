@@ -546,8 +546,19 @@ button.next{
     }
   }
 
-@media screen and (max-width: 600px){
-    
+  @media screen and (max-width: 1025px){
+    .hero__container .hero__banner-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 12rem;
+        left: 7rem;
+        background-color: none;
+    }
+    .hero__container .hero__banner-text p{
+        display: none;
+        background-color: #000000;
+      }
 }
 
 
@@ -679,23 +690,26 @@ button.next{
 
 .video__container {
     width: 100%;
-    height: auto; /* Allow height to adjust based on content */
-    max-height: 80vh; /* Optional: limit height if needed */
-    overflow: hidden; /* Change to 'hidden' or 'visible' as needed */
-    display: flex; /* Use flex to center the video */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
+    height: auto; 
+    max-height: 80vh; 
+    overflow: hidden; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
 }
 .welcome__video {
     width: 100%; 
-    height: auto; /* Use auto to maintain aspect ratio */
-    max-height: 100%; /* Limit height to container */
-    object-fit: contain; /* Ensure the entire video fits */
+    height: auto; 
+    max-height: 100%; 
+    object-fit: contain; 
     overflow: hidden;
 }
 @media screen and (max-width: 1025px){
     .welcome__message-container{
         grid-template-columns: 1fr;
+        position: relative;
+        margin-top: 40rem;
+        margin-bottom: 33rem;
     }
 }
 
@@ -933,6 +947,10 @@ line-height: 1.8rem
 
 
 @media screen and (max-width: 1025px){
+
+    .school__activities{
+        margin-bottom: 28rem;
+    }
     .activities__boxes{
         display: grid;
         grid-template-columns: 1fr;
