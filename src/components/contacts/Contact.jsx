@@ -13,7 +13,7 @@ const Contact = () => {
                 <div className="text">
                    <p> Phone1 : 454848488888 </p>
                     <p>Phone2 : 454848488888 </p>
-+                </div>
+            </div>
             </div>
            
             <div className="contact__details">
@@ -21,8 +21,8 @@ const Contact = () => {
                     <FaLocationDot className="icon"/>
                 </div> 
                 <div className="address">
-                    <p>Address : trjh hnbuigbvbjkfjbgjgbnggbbfhff</p>
-+                </div> 
+                    <p>Address :  9R3F+45, 123, Oyinloye Olawale Street, Aba Bashorun Rd, Elebu, Ibadan 200131</p>
+              </div> 
             </div>
             
             <div className="contact__details">

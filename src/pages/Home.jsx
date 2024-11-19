@@ -1,5 +1,6 @@
 import React, { useContext, useEffect,useState } from 'react';
 import { Link } from 'react-router-dom';
+import {Helmet} from 'react-helmet';
 import { MyContext } from '../contexts/MyContext';
 import {delay, motion} from 'framer-motion';
 import {heroImage, classImage,schoolActivities,testimonials, gallery} from '../data';
@@ -175,7 +176,47 @@ const containerVariant = {
     }
   }
 };
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "School",
+  "name": "ICAST Schools",
+  "description": "ICAST Schools offers a comprehensive education experience, from Kindergarten to Secondary School.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 School Street",
+    "addressLocality": "City Name",
+    "addressRegion": "State Name",
+    "postalCode": "12345",
+    "addressCountry": "Country Name"
+  },
+  "telephone": "+1-234-567-8900",
+  "url": "https://icast.schools",
+  "logo": "https://icast.schools/logo.png",
+  "sameAs": [
+    "https://facebook.com/icastschools",
+    "https://twitter.com/icastschools",
+    "https://instagram.com/icastschools"
+  ]
+};
   return (
+    <>
+    <Helmet>
+      <title>ICAST Schools | Quality Education for Future Leaders</title>
+      <meta name="description" content="ICAST Schools offers a comprehensive educational experience from Kindergarten to Secondary School, empowering future leaders with a focus on quality education." />
+      <meta name="keywords" content="ICAST Schools, quality education, Kindergarten, Primary School, Secondary School, education for future leaders" />
+      <meta name="robots" content="index, follow" />
+      <meta property="og:title" content="ICAST Schools | Quality Education" />
+      <meta property="og:description" content="ICAST Schools offers quality education from Kindergarten to Secondary School, empowering students with the skills they need for the future." />
+      <meta property="og:url" content="https://icastschools.com" />
+      <meta name="twitter:title" content="ICAST Schools | Quality Education" />
+      <meta name="twitter:description" content="Empowering future leaders through quality education at ICAST Schools." /> 
+
+
+      <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+    </Helmet>
     <section className="section home">
     <motion.section className="home__container container" style={{ backgroundImage: `url(${heroImage[currentIndex]})` }}
       variants={backgroundVariants}
@@ -193,7 +234,6 @@ const containerVariant = {
         <h1>Welcome to <span>ICAST Schools</span></h1>
         <p>Empowering Future Leaders through Quality Education from Kindergarten to Secondary School.</p>
           <p>At ICAST Schools, we nurture young minds with a comprehensive curriculum designed to inspire curiosity and foster a love for learning. Our dedicated educators are committed to providing a supportive environment where every child can thrive, discover their potential,and excel in their academic journey.</p>
-
         </motion.div>
         <button className='prev' onClick={prevSlide}><FaLessThan className='icon' /></button>
         <button className='next' onClick={nextSlide}><FaGreaterThan className='icon'/></button>
@@ -425,12 +465,12 @@ const containerVariant = {
               <div className="right__side">
                 <h3>{title}</h3>
                 <p>{description}</p>
-                <button className="btn more">Read More</button>
+                <Link to='/activities'><button className="btn more">Read More</button></Link>
               </div>
             </div>
           </div>
-          <FaLessThan className='less icon'/>
-          <FaGreaterThan className='great icon'/>
+          <FaLessThan className='less icon' onClick={prevSlide}/>
+          <FaGreaterThan className='great icon' onClick={nextSlide}/>
       </section>
   
      <section className='counter section' ref ={counterRef}>
@@ -518,6 +558,8 @@ const containerVariant = {
   <Contact/>  
 </section>
 </section>
+
+</>
   )
 }
 

@@ -2,6 +2,8 @@ import { steps } from "../data";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
+import Subheader from "../components/subheader/Subheader";
+import { heroImage } from "../data";
 
 
 
@@ -20,6 +22,8 @@ const Admission = () => {
 
 
   return (
+    <>
+    <Subheader name ="contact" image ={heroImage[2]}/>
     <div className="admission section">
         <div className="admission__container container">
             <section className="admission__process">
@@ -63,6 +67,7 @@ const Admission = () => {
             </section>
         </div>
     </div>
+    </>
   )
 }
 

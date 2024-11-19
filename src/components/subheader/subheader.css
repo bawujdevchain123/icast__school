@@ -1,6 +1,6 @@
 .subheader{
     width:100vw;
-    height:17rem;  
+    height:40rem;  
     background-repeat:no-repeat;
     background-size:cover;
     display: flex;
@@ -8,7 +8,11 @@
     z-index: -100;
     background-color: blue;
 }
-
+.subheader__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .subheader__container h2{
     font-size: 2rem;
     position: relative;

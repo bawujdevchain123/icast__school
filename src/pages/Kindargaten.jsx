@@ -18,11 +18,10 @@ const Kindargaten = () => {
 
     console.log("Hovered ID:", hoveredId);
   return (
-    <>
-    <Subheader image={background} name = "Kindagarten"/>
     <div className = 'kindagarten'>
         <div className="kindagarten__container container">
         <header className="kindagarten__header section">
+        <h2 className="home__link"><span>Home/</span>Kindagarten</h2>
         <div className="container">
           <h1>Welcome to Kindergarten</h1>
           <p>Discover our engaging programs, resources, and exciting offers for young learners.</p>
@@ -127,7 +126,6 @@ const Kindargaten = () => {
             </section>
         </div>
     </div>
-    </>
   )
 }
 

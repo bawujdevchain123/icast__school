@@ -3,13 +3,14 @@ import Subheader from "../components/subheader/Subheader";
 import { Link } from "react-router-dom";
 
 
+
 const Blog = () => {
   return (
     <>
     <Subheader name = "blog" image ={heroImage[3]} />
     <div className="news section">
       <h2>News</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo fugit hic odit!</p>
+      <p>Stay updated with the latest news, events, and announcements from ICAST Schools. Here, we share insights into our academic achievements, extracurricular activities, and much more!</p>
        <div className="news__container container">
           <section  className="post__container">
           {

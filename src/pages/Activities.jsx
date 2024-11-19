@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import {mainActivities,fullGallery} from '../data';
+import Subheader from '../components/subheader/Subheader';
+import { heroImage } from '../data';
 
 
 
@@ -11,6 +13,8 @@ const Activities = () => {
     setActiveTab(tab)
   }
   return (
+    <>
+     <Subheader name ="contact" image ={heroImage[5]}/>
     <main className="activities">
       <div className="activities__container">
         <section className="activities__categories section">
@@ -91,6 +95,7 @@ const Activities = () => {
         </section>
       </div>
     </main>
+    </>
   )
 }
 

@@ -1,6 +1,7 @@
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
-
+import { useState } from 'react';
 import MainLayout from './layout.jsx/MainLayout';
+import LoadingSpinner from './components/spinner/LoadingSpinner';
 import Home from '../src/pages/Home';
 import ErrorPage from '../src/pages/ErrorPage';
 import About from './pages/About';
@@ -24,8 +25,48 @@ import PostDetail from './pages/PostDetail';
 import Payment from './pages/Payment';
 import Login from './pages/Payment';
 import DownloadForm from './pages/DownloadForm';
+import { useEffect } from 'react';
 
 function App() {
+  const [isPageLoaded, setIsPageLoaded] = useState(false);
+
+  useEffect(()=>{
+    const allImage = document.images;
+    const totalImages = allImage.length;
+    let imageLoaded = 0;
+
+    const checkImageLoaded = () =>{
+      imageLoaded++;
+      if(imageLoaded == allImage){
+        setIsPageLoaded(true)
+      }
+    }
+    
+    //if there are images, check if each one is loaded
+    if(totalImages > 0){
+       for(let i = 0; i < totalImages; i++){
+         if(allImage[i].complete){
+           imageLoaded++
+         }else{
+            allImage[i].addEventListener('load', checkImageLoaded)
+            allImage[i].addEventListener('error', checkImageLoaded)
+         }
+       }
+    }else{
+       //if no images exist, mark page as loaded immediately
+       setIsPageLoaded(true)
+    }
+
+    //cleanup: remove event listeners when the component unmounts
+
+    return () =>{
+      for(let i = 0; i < totalImages; i++){
+        allImage[i].removeEventListener('load', checkImageLoaded);
+        allImage[i].removeEventListener('load', checkImageLoaded);
+      }
+    }
+
+  }, [])
  const router = createBrowserRouter([
   {
     path :"/",
@@ -59,7 +100,8 @@ function App() {
 
   return (
     <MyProvider>
-      <RouterProvider router ={router}/>
+      {!isPageLoaded && <LoadingSpinner/>}
+      {isPageLoaded && <RouterProvider router ={router}/> }
     </MyProvider>
   )
 }
