@@ -542,8 +542,8 @@ const structuredData = {
             </div>
             <div className="circle"></div>
             <div className="profile__text">
-              <p>Lorem, ipsum.</p>
-              <p>Lorem, ipsum.</p>
+              <p> Adeyemi Tomilola</p>
+              <p>Babalola James</p>
             </div>
           </div>
          

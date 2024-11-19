@@ -29,7 +29,7 @@
     100%{transform: rotate(0deg);}
 }
 
-.text {
+.loading-overlay .text {
     display: flex;
     justify-content: center;
     align-items: center;

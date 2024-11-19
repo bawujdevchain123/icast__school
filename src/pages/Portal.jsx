@@ -60,7 +60,10 @@ const Portal = () => {
             <img src={logo} alt="" />
           </div>
           <div className="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae et, corporis quis qui sint rem error. Possimus deserunt facere ab?
+             <p>Welcome to the ICAST School Portal! This platform allows staff and parents to access important student      information.</p>
+            <p>Staff members can log in to check and update student results, while parents can view their child's performance, progress reports, and other relevant details. 
+            Please select an option below to proceed to the appropriate portal.
+            </p>
           </div>
         </section>
         <section className='form__container'>
