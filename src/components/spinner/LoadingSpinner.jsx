@@ -5,7 +5,9 @@ const LoadingSpinner = () => {
   return (
     <div className='loading-overlay'>
         <div className="spinner">
-            <p className="loading-text">Loading.......</p>
+        </div>
+        <div className='text'>
+        <p className="loading-text">Loading.......</p>
         </div>
     </div>
   )

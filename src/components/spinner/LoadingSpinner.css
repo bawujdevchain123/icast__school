@@ -16,7 +16,7 @@
 }
 
 .spinner{
-    border: 8px solid rgba(0, 0, 0, 0.1);
+    border: 8px solid rgba(0, 0, 0, 0.5);
     border-top: 8px solid #3498db;
     border-radius: 50%;
     width: 50px;
@@ -29,16 +29,100 @@
     100%{transform: rotate(0deg);}
 }
 
-.loading-text{
-    margin-top: 20px;
-    font-size: 20px;
-    color: #fff;
-    font-weight: bold;
-    animation: fadeIn 1.5s ease-in-out infinite;
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: var(--secondary-color);
+    font-family: Arial, sans-serif;
+    position: relative;
+    z-index: 2;
+  }
+  
+
+.loading-text {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 }
+
+.letter {
+  opacity: 0;
+  display: inline-block;
+  animation: reveal 1.5s ease-in-out forwards;
+  animation-delay: calc(0.2s * var(--letter-index)); 
+}
+
+.letter-0 {
+    color: #e74c3c; 
+  }
+  
+  .letter-1 {
+    color: #2ecc71; 
+  }
+  
+  .letter-2 {
+    color: #f39c12; 
+  }
+  
+  .letter-3 {
+    color: #3498db; 
+  }
+  
+  .letter-4 {
+    color: #9b59b6; 
+  }
+  
+  .letter-5 {
+    color: #1abc9c; 
+  }
+  
+  .letter-6 {
+    color: #16a085; 
+  }
+  
+  .letter-7 {
+    color: #f1c40f;
+  }
+  
+  .letter-8 {
+    color: #e67e22; 
+  }
+  
+  .letter-9 {
+    color: #ecf0f1; 
+  }
+  
+  .letter-10 {
+    color: #95a5a6; 
+  }
+  
+  .letter-11 {
+    color: #34495e; 
+  }
+  
+  .letter-12 {
+  }
+  
+  .letter-13 {
+    color: #7f8c8d; 
+  }
+  
 
 @keyframes fadeIn{
     0%{opacity: 0}
     50%{opacity: 1}
     100%{opacity: 0}
 }
+
+@keyframes reveal {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
